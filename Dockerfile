@@ -3,6 +3,9 @@ FROM www.cybage-docker-registry.com:9080/jenkins_node_slave:1.2
 RUN npm install gulp
 RUN npm install -g gulp
 RUN npm install -g gulp-cli
+RUN ln -s /usr/local/bin/node /usr/bin/node
+RUN ln -s /usr/local/bin/gulp /usr/bin/gulp
+
 
 # Define working directory.
 RUN mkdir -p "/data/emsapp"
