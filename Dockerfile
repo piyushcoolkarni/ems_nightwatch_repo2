@@ -20,3 +20,5 @@ ADD reports reports
 ADD node_modules node_modules
 ADD test test
 ADD selenium-server-standalone-2.47.1.jar server.js nightwatch.js package.json Gulpfile.js ./
+
+EXPOSE 4545
