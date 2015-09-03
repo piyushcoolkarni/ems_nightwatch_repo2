@@ -1,6 +1,6 @@
 FROM www.cybage-docker-registry.com:9080/jenkins_node_slave:1.3
 
-
+RUN npm install -g gulp
 
 # Define working directory.
 RUN mkdir -p "/data/emsapp"
