@@ -15,7 +15,7 @@ describe("SAMPLE unit test",function(){
 
     // calling home page api
     server
-    .post("/api/employees")
+    .post("/api/users")
     .expect("Content-type",/json/)
     .expect(200) // THis is HTTP response
     .end(function(err,res){
@@ -33,7 +33,7 @@ describe("SAMPLE unit test",function(){
 
     // calling home page api
     server
-    .get("/api/employees")
+    .get("/api/users")
     .expect("Content-type",/json/)
     .expect(200) // THis is HTTP response
     .end(function(err,res){
